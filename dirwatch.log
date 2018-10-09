@@ -1,0 +1,445 @@
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 116, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 116, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 116, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 116, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 116, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 116, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+Got signal: 15
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 116, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+polling completed, uptime: 13.5 seconds
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+Got signal: 15
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+TypeError: watch_directory() takes exactly 1 argument (2 given)
+polling completed, uptime: 23.0 seconds
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 48, in watch_directory
+    directory = path.join([os.path.relpath(os.getcwd), "/", dir])
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 431, in relpath
+    path_list = [x for x in abspath(path).split(sep) if x]
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 360, in abspath
+    if not isabs(path):
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 54, in isabs
+    return s.startswith('/')
+AttributeError: 'builtin_function_or_method' object has no attribute 'startswith'
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 48, in watch_directory
+    directory = path.join([os.path.relpath(os.getcwd), "/", dir])
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 431, in relpath
+    path_list = [x for x in abspath(path).split(sep) if x]
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 360, in abspath
+    if not isabs(path):
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 54, in isabs
+    return s.startswith('/')
+AttributeError: 'builtin_function_or_method' object has no attribute 'startswith'
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 48, in watch_directory
+    directory = path.join([os.path.relpath(os.getcwd), "/", dir])
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 431, in relpath
+    path_list = [x for x in abspath(path).split(sep) if x]
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 360, in abspath
+    if not isabs(path):
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 54, in isabs
+    return s.startswith('/')
+AttributeError: 'builtin_function_or_method' object has no attribute 'startswith'
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 48, in watch_directory
+    directory = path.join([os.path.relpath(os.getcwd), "/", dir])
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 431, in relpath
+    path_list = [x for x in abspath(path).split(sep) if x]
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 360, in abspath
+    if not isabs(path):
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 54, in isabs
+    return s.startswith('/')
+AttributeError: 'builtin_function_or_method' object has no attribute 'startswith'
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 48, in watch_directory
+    directory = path.join([os.path.relpath(os.getcwd), "/", dir])
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 431, in relpath
+    path_list = [x for x in abspath(path).split(sep) if x]
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 360, in abspath
+    if not isabs(path):
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 54, in isabs
+    return s.startswith('/')
+AttributeError: 'builtin_function_or_method' object has no attribute 'startswith'
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 48, in watch_directory
+    directory = path.join([os.path.relpath(os.getcwd), "/", dir])
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 431, in relpath
+    path_list = [x for x in abspath(path).split(sep) if x]
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 360, in abspath
+    if not isabs(path):
+  File "/usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 54, in isabs
+    return s.startswith('/')
+AttributeError: 'builtin_function_or_method' object has no attribute 'startswith'
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+ butt.txt found in ./test
+ fan.txt found in ./test
+ derdir.txt found in ./test
+ fart.txt found in ./test
+ derp.txt found in ./test
+ canoodle.txt found in ./test
+ immature.txt found in ./test
+ cheese.txt found in ./test
+no directory? aint nobody got time for that!
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 117, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 66, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 38, in find_magic
+    with open(directory) as f:
+IOError: [Errno 21] Is a directory: '/Users/morgan/Documents/side-projects/dirwatch/test'
+Error, not found: ./test
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+ butt.txt found in ./test
+ fan.txt found in ./test
+ derdir.txt found in ./test
+ fart.txt found in ./test
+ derp.txt found in ./test
+ canoodle.txt found in ./test
+ immature.txt found in ./test
+ cheese.txt found in ./test
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+ butt.txt found in ./test
+ fan.txt found in ./test
+ derdir.txt found in ./test
+ fart.txt found in ./test
+ derp.txt found in ./test
+ canoodle.txt found in ./test
+ immature.txt found in ./test
+ cheese.txt found in ./test
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+ butt.txt found in ./test
+ fan.txt found in ./test
+ derdir.txt found in ./test
+ fart.txt found in ./test
+ derp.txt found in ./test
+ canoodle.txt found in ./test
+ immature.txt found in ./test
+ cheese.txt found in ./test
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+ butt.txt found in ./test
+ fan.txt found in ./test
+ derdir.txt found in ./test
+ fart.txt found in ./test
+ derp.txt found in ./test
+ canoodle.txt found in ./test
+ immature.txt found in ./test
+ cheese.txt found in ./test
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+ butt.txt found in ./test
+ fan.txt found in ./test
+ derdir.txt found in ./test
+ fart.txt found in ./test
+ derp.txt found in ./test
+ canoodle.txt found in ./test
+ immature.txt found in ./test
+ cheese.txt found in ./test
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+ butt.txt found in ./test
+wizard found at line 8 in butt.txt
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+ butt.txt found in ./test
+wizard found at line 8 in butt.txt
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+setting the path to /Users/morgan/Documents/side-projects/dirwatch/test where we'll search for files
+Got signal: 15
+Got signal: 15
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+ butt.txt found in ./test
+wizard found at line 8 in butt.txt
+Got signal: 15
+polling completed, uptime: 56.3 seconds
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+ butt.txt found in ./test
+wizard found at line 8 in butt.txt
+wizard found at line 13 in butt.txt
+Got signal: 15
+polling completed, uptime: 10324.6 seconds
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+ butt.txt found in ./test
+wizard found at line 8 in butt.txt
+wizard found at line 13 in butt.txt
+ cheese.txt found in ./test
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+unknown exception
+Traceback (most recent call last):
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 119, in main
+    watch_directory(arg_namespace.dir, arg_namespace.ext)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 68, in watch_directory
+    find_magic(file, directory)
+  File "/Users/morgan/Documents/side-projects/dirwatch/dirwatch.py", line 45, in find_magic
+    file_dict[file] = i
+UnboundLocalError: local variable 'i' referenced before assignment
+wizard found at line 3 in cheese.txt
+Got signal: 15
+polling completed, uptime: 103.9 seconds
+Searching the following directory: ./test
+starting __main__...
+Polling of directory every 2 seconds
+ butt.txt found in ./test
+ cheese.txt found in ./test
+wizard found at line 8 in butt.txt
+wizard found at line 13 in butt.txt
+wizard found at line 3 in cheese.txt
+Got signal: 15
+Got signal: 15
+Got signal: 2
+Got signal: 2
+polling completed, uptime: 467.7 seconds
