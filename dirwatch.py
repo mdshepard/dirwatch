@@ -5,13 +5,11 @@ import time
 import os
 import sys
 
-# my ol' sloppy logger
 logger = logging.getLogger(__name__)
 
 
 def setup_logger():
     fmt = '%(asctime)s:%(levelname)s:%(message)s'
-    # formatter = logging.Formatter(fmt)
     logging.basicConfig(format=fmt, level=logging.DEBUG)
     file_handler = logging.FileHandler('dirwatch.log')
     logger.addHandler(file_handler)
@@ -23,7 +21,7 @@ file_dict = {}
 global file_path
 
 
-def handle_signal(sig, stack):
+def signal_handler(sig, stack):
     logger.warning("Got signal: {}".format(sig))
     global exit_flag
     if sig == signal.SIGINT:
@@ -46,11 +44,10 @@ def find_magic(file, directory):
 
 
 def watch_directory(dir, ext):
-    # path = ""
     directory = os.path.abspath(dir)
-    # logger.info("setting the path to {0} where we'll search for files".format(
-    #     directory)
-    # )
+    logger.info("setting the path to {0} where we'll search for files".format(
+        directory)
+                )
 
     watched_files = [f for f in os.listdir(directory) if f.endswith(ext)]
 
@@ -105,8 +102,8 @@ def main(args):
     )
     logger.info("starting {}...".format(__name__))
 
-    signal.signal(signal.SIGINT, handle_signal)
-    signal.signal(signal.SIGTERM, handle_signal)
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
 
     logger.info(
         "Polling of directory every {} seconds".format(
@@ -118,10 +115,11 @@ def main(args):
         try:
             watch_directory(arg_namespace.dir, arg_namespace.ext)
         except IOError:
-            logger.exception('no directory? aint nobody got time for that!')
+            logger.exception('No directory found, watching for it to reappear')
             logger.error("Error, not found: {}".format(
                 arg_namespace.dir)
             )
+
         except Exception:
             logger.exception('unknown exception')
     logger.info('polling completed, uptime: {0:.1f} seconds'.format(
