@@ -1,5 +1,5 @@
 
-#Dirwatcher
+# Dirwatcher
 
 This long running program continuously searches text files within a directory for a specific "magic" word.
 
@@ -12,7 +12,7 @@ the above will launch the program to run at 10 second intervals and to search th
 It will search for files within the directory and will then search the directory line by line, logging every time the "magic" word is found.
 If the program is left to run, and you change the text files and add more magic words, it should log where the magic word is found, and it should only log a new magic word found once.
 
-###CMD line help
+### CMD line help
 
 usage:
 ```
