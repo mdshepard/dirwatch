@@ -1,7 +1,0 @@
-Some text on line 1
-some more text on line 2
-oh, snap, a wizard on line 3!
-more text line 4
-line 5
-line 6
-line 7
