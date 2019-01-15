@@ -16,7 +16,7 @@ If the program is left to run, and you change the text files and add more magic 
 
 usage:
 ```
-$ python dirwatcher.py [-h] interval [-i] directory [-d]
+$ python dirwatcher.py [-h], interval [-i], directory, magic
 ```
 
 ### error handling
