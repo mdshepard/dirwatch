@@ -1,3 +1,11 @@
+#!/usr/bin/env python2
+__author__ = 'mdshepard'
+"""
+Dirwatcher. Long running program that watches for txt files within a directory,
+and scans the text files for occurances of a "magic" word, defined in the
+command line, and upon new lines being added to the file(s), checks them as 
+they're created.
+"""
 import signal
 import logging
 import argparse
@@ -5,67 +13,75 @@ import time
 import os
 import sys
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__file__)
+exit_flag = False
+file_dict = {}
 
 
 def setup_logger():
+    """
+    sets up our logger, which will provide input in the terminal as the program
+    runs
+    """
     fmt = '%(asctime)s:%(levelname)s:%(message)s'
     logging.basicConfig(format=fmt, level=logging.DEBUG)
-    file_handler = logging.FileHandler('dirwatch.log')
-    logger.addHandler(file_handler)
-
-
-exit_flag = False
-
-file_dict = {}
-global file_path
 
 
 def signal_handler(sig, stack):
+    """
+    Signal handler receives runtime errors and terminates the program.
+    """
     logger.warning("Got signal: {}".format(sig))
     global exit_flag
-    if sig == signal.SIGINT:
-        exit_flag = True
-    if sig == signal.SIGTERM:
-        exit_flag = True
+    exit_flag = True
 
 
-def find_magic(file, directory):
-    """checks for magic word"""
-    magic_word = 'wizard'
-    with open(os.path.join(directory, file)) as f:
+def find_magic(file, directory, magic_word):
+    """checks for magic word within the current file, line by line"""
+    full_path = os.path.join(directory, file)
+    start_line = file_dict[file]
+    with open(full_path) as f:
+        i = -1
         for i, line in enumerate(f):
-            if i <= file_dict[file]:
-                continue
-            if magic_word in line:
+            if i >= start_line and magic_word in line:
                 logger.info('{} found at line {} in {}'
-                            .format(magic_word, i + 1, file))
-        file_dict[file] = i
+                            .format(magic_word, i + 1, full_path))
+        file_dict[file] = i + 1
 
 
-def watch_directory(dir, ext):
+def watch_directory(dir, ext, magic_word):
+    """
+    specifies the directory being searched, the file extension of the files
+    within the directory with .txt as default, and the magic word to find
+    within the text in the files.
+    """
     directory = os.path.abspath(dir)
-    logger.info("setting the path to {0} where we'll search for files".format(
-        directory)
-                )
 
     watched_files = [f for f in os.listdir(directory) if f.endswith(ext)]
 
     if len(watched_files) > len(file_dict):
         for file in watched_files:
             if file not in file_dict:
-                logger.info(' {} found in {}'.format(file, dir))
+                logger.info('new file {} found in {}'.format(file, dir))
                 file_dict[file] = 0
     elif len(watched_files) < len(file_dict):
-        for file in file_dict:
+        for file in list(file_dict):
+            # we're iterating over a copy of the keys of the file_dict, so we
+            # can pop the keys in the dictionary without triggering
+            # a runtime error. That way we can delete files in dir and the
+            # program still runs. List creates the copy.
             if file not in watched_files:
                 logger.info(" removed {} from {}".format(file, dir))
                 file_dict.pop(file, None)
     for file in watched_files:
-        find_magic(file, directory)
+        find_magic(file, directory, magic_word)
+        pass
 
 
 def create_parser():
+    """
+    creates our command line arguments.
+    """
     parser = argparse.ArgumentParser(
         description="Watches a directory of text files for a magic string"
         )
@@ -84,10 +100,18 @@ def create_parser():
         'dir', help="Directory to watch", type=str,
     )
 
+    parser.add_argument(
+        'magic', help="magic word we're searching for", type=str,
+    )
+
     return parser
 
 
 def main(args):
+    """
+    le main function. Where the while loop that maintains the long running nature of the
+    program resides.
+    """
 
     setup_logger()
 
@@ -113,7 +137,9 @@ def main(args):
         time.sleep(arg_namespace.interval)
 
         try:
-            watch_directory(arg_namespace.dir, arg_namespace.ext)
+            watch_directory(
+                arg_namespace.dir, arg_namespace.ext, arg_namespace.magic
+                )
         except IOError:
             logger.exception('No directory found, watching for it to reappear')
             logger.error("Error, not found: {}".format(
