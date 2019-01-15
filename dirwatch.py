@@ -3,7 +3,7 @@ __author__ = 'mdshepard'
 """
 Dirwatcher. Long running program that watches for txt files within a directory,
 and scans the text files for occurances of a "magic" word, defined in the
-command line, and upon new lines being added to the file(s), checks them as 
+command line, and upon new lines being added to the file(s), checks them as
 they're created.
 """
 import signal
@@ -109,8 +109,8 @@ def create_parser():
 
 def main(args):
     """
-    le main function. Where the while loop that maintains the long running nature of the
-    program resides.
+    le main function. Where the while loop that maintains the long running
+    nature of the program resides.
     """
 
     setup_logger()
