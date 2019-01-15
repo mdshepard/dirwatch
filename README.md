@@ -23,3 +23,7 @@ $ python dirwatcher.py [-h], interval [-i], directory, magic
 The point of the program is to keep running if errors are encountered, so if it doesn't find the directory in question, it will keep running to see if the directory appears.
 If the directory isn't there, once that directory is created, such as in the case of a logfile, it will then run through the program as normal.
 
+#### Lessons learned, tidbits of info, causes for fits of rage, etc...
+Be careful to not remove an item from a dictionary while actively iterating over it in a long running program. One should instead create a copy of the dictionary (or at least it's keys) with something like list(whatever_dict).
+Be careful to account for the first line when using enumerate by giving it a starting point that allows for the 1st item to be properly accounted for.
+To be continued on lessons learned!
