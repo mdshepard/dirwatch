@@ -140,14 +140,13 @@ def main(args):
             watch_directory(
                 arg_namespace.dir, arg_namespace.ext, arg_namespace.magic
                 )
-        except IOError:
-            logger.exception('No directory found, watching for it to reappear')
+        except OSError:
             logger.error("Error, not found: {}".format(
                 arg_namespace.dir)
             )
+        except Exception as e:
+            logger.error("Unhandled exception:{}".format(e))
 
-        except Exception:
-            logger.exception('unknown exception')
     logger.info('polling completed, uptime: {0:.1f} seconds'.format(
         time.time() - start_time)
     )
